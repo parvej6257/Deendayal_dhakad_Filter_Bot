@@ -95,7 +95,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'TP_Movies_request')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIES_BOLTS')
-OWNER_LNK = environ.get('OWNER_LNK', '@PKcontact_bot')
+OWNER_LNK = environ.get('OWNER_LNK', 'PKcontact_bot')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/TechnicalPunjabi012')
 OWNERID = int(os.environ.get('OWNERID', '1750291898'))  # Replace with the actual admin ID
 
@@ -151,7 +151,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 # Server & Web Configuration
 # ============================
 
-STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False
+STREAM_MODE = bool(environ.get('STREAM_MODE', False)) # Set Stream mode True or False
 
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
