@@ -41,9 +41,9 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1750291898').split()] # Replace with the actual admin ID(s) to add
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002489446543').split()]  # Channel id for auto indexing (make sure bot is admin)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002413284040'))  # Log channel id (make sure bot is admin)
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1001970548842'))  # Bin channel id (make sure bot is admin)
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002129955308'))  # Notification of those who verify will be sent to your channel
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001970548842'))  # Premium logs channel id
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002413284040'))  # Bin channel id (make sure bot is admin)
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1001560514579'))  # Notification of those who verify will be sent to your channel
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002413284040'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '')  # Support group id (make sure bot is admin)
@@ -94,10 +94,10 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # Channel & Group Links Configuration
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'TP_Movies_request')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/dreamcinezone')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/dreamcinezone')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/dreamcinezone')
-OWNERID = int(os.environ.get('OWNERID', '1234567890'))  # Replace with the actual admin ID
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIES_BOLTS')
+OWNER_LNK = environ.get('OWNER_LNK', '@PKcontact_bot')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/TechnicalPunjabi012')
+OWNERID = int(os.environ.get('OWNERID', '1750291898'))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
@@ -128,12 +128,12 @@ LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False")
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002489446543')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
-PM_SEARCH = bool(environ.get('PM_SEARCH', True))  # PM Search On (True) / Off (False)
-EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / Off (False)
+PM_SEARCH = bool(environ.get('PM_SEARCH', False))  # PM Search On (True) / Off (False)
+EMOJI_MODE = bool(environ.get('EMOJI_MODE', True))  # Emoji status On (True) / Off (False)
 
 # ============================
 # Bot Configuration
