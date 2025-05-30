@@ -18,8 +18,8 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'Deendayal_search')
-API_ID = int(environ.get('API_ID', '25863055'))
-API_HASH = environ.get('API_HASH', '3d83dfe76b57b3f47de4fc8031aeb8c8')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # ============================
@@ -61,10 +61,10 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'deendayaldhaked@ybl')
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://rittusharma117:parvej6155@cluster0.gzvft.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://Technical:Technical@technical.b2mml.mongodb.net/?retryWrites=true&w=majority&appName=Technical")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'TP_BACKUP')
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', '')
 
 # ============================
 # Movie Notification & Update Settings
@@ -93,11 +93,11 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'TP_Movies_request')
+GRP_LNK = environ.get('GRP_LNK', '')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/MOVIES_BOLTS')
 OWNER_LNK = environ.get('OWNER_LNK', 'PKcontact_bot')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/TechnicalPunjabi012')
-OWNERID = int(os.environ.get('OWNERID', '1750291898'))  # Replace with the actual admin ID
+OWNERID = int(os.environ.get('OWNERID', ''))  # Replace with the actual admin ID
 
 # ============================
 # User Configuration
